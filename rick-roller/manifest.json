@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Rick Roller",
+    "version": "0.1",
+    "description":"This extension redirects everything to a Rick Roll. Use it for pranks if you want.",
+    "icons": {
+      "16": "16.png",
+      "32": "32.png",
+      "48": "48.png",
+      "128": "128.png"
+    },
+    "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": ["content.js"]
+        }
+    ],
+    "page_action": {
+        "default_icon": {
+          "16": "16.png",
+          "32": "32.png",
+          "48": "48.png",
+          "128": "128.png"
+        }
+    }
+}
